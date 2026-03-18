@@ -29,11 +29,7 @@ async function getLogin() {
       // 🔥 aqui está o que importa
       navigation.reset({
         index: 0,
-<<<<<<< HEAD
         routes: [{ name: 'CidadeEsportes' }]
-=======
-        routes: [{ name: 'Home' }]
->>>>>>> 921168ead6de66d6187e89afe4bba95a46adf9b8
       });
 
       return;

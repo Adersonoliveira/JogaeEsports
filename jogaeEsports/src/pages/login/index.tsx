@@ -16,25 +16,32 @@ export default function Login() {
     const [loading, setLoading] = useState(false);
 
 
-    async function getLogin() {
-        try {
-            setLoading(true)
+async function getLogin() {
+  try {
+    setLoading(true);
 
-            if (!email || !password) {
-                return Alert.alert('Anteção', 'Informe os campos obrigatórios!')
-            }
-
-            if (email === 'marcio@gmail.com' && password === '12345') {
-                return navigation.reset({ routes: [{ name: 'BottomRoutes' }] });
-            }
-
-            Alert.alert('Atenção', 'E-mail ou senha invalida!')
-        } catch (error) {
-            console.log(error)
-        } finally {
-            setLoading(false)
-        }
+    if (!email || !password) {
+      return Alert.alert('Atenção', 'Informe os campos obrigatórios!');
     }
+
+    if (email === 'marcio@gmail.com' && password === '12345') {
+      
+      // 🔥 aqui está o que importa
+      navigation.reset({
+        index: 0,
+        routes: [{ name: 'Home' }]
+      });
+
+      return;
+    }
+
+    Alert.alert('Atenção', 'E-mail ou senha inválido!');
+  } catch (error) {
+    console.log(error);
+  } finally {
+    setLoading(false);
+  }
+}
 
     return (
         <View style={style.container}>

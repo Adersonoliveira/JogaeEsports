@@ -89,7 +89,7 @@ export default function cidadeEsportes() {
             </View>
 
             {/* Botão */}
-            <View style={{ marginTop: 30 }}>
+            <View style={styles.buttonWrapper}>
                 <Button
                     text="CONTINUAR"
                     loading={loading}

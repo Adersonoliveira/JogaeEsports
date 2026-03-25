@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
   },
 
   title: {
-    fontSize: 22,
+    fontSize: 32,
     fontWeight: "bold",
     marginBottom: 20
   },
@@ -46,5 +46,11 @@ export const styles = StyleSheet.create({
   sportTextSelected: {
     color: "#fff",
     fontWeight: "bold"
+  },
+
+  buttonWrapper: {
+    marginTop: 60,
+    alignItems: "center",
+    justifyContent: "center"
   }
 });

@@ -16,7 +16,7 @@ const sportsList = [
 export default function cidadeEsportes() {
     const navigation = useNavigation<NavigationProp<any>>();
 
-    const [name, setName] = useState("");
+
     const [city, setCity] = useState("");
     const [selectedSports, setSelectedSports] = useState<string[]>([]);
     const [loading, setLoading] = useState(false);
@@ -31,7 +31,7 @@ export default function cidadeEsportes() {
     }
 
     function handleContinue() {
-        if (!name || !city) {
+        if (!city) {
             return alert("Preencha os campos");
         }
 
@@ -40,12 +40,14 @@ export default function cidadeEsportes() {
         }
 
         console.log({
-            name,
             city,
             selectedSports
         });
 
-        // navigation.navigate("NextScreen")
+        navigation.reset({
+          index: 0,
+          routes: [{ name: 'Main' }],
+        });
     }
 
     return (

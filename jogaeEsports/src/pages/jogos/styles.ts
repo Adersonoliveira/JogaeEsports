@@ -8,7 +8,12 @@ export const styles = StyleSheet.create({
     backgroundColor: '#FFF'
   },
   title: {
-    fontSize: 32,
+    fontSize: 30,
     fontWeight: 'bold'
+  },
+  sub: {
+    marginTop: 10,
+    fontSize: 16,
+    color: '#666'
   }
 });

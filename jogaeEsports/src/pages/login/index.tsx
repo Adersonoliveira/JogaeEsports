@@ -26,7 +26,6 @@ async function getLogin() {
 
     if (email === 'marcio@gmail.com' && password === '12345') {
       
-      // 🔥 aqui está o que importa
       navigation.reset({
         index: 0,
         routes: [{ name: 'CidadeEsportes' }]

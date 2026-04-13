@@ -9,23 +9,10 @@ export const styles = StyleSheet.create({
   header: {
     paddingHorizontal: 16,
     paddingTop: 16,
-    paddingBottom: 16,
+    paddingBottom: 12,
     backgroundColor: themas.Colors.secondary,
     borderBottomWidth: 1,
     borderBottomColor: themas.Colors.lightGray,
-  },
-  headerTop: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "flex-start",
-    marginBottom: 12,
-  },
-  headerInfo: {
-    flex: 1,
-  },
-  changeCityButton: {
-    padding: 8,
-    marginLeft: 8,
   },
   title: {
     fontSize: 28,
@@ -36,7 +23,6 @@ export const styles = StyleSheet.create({
   subtitle: {
     fontSize: 13,
     color: themas.Colors.gray,
-    marginBottom: 12,
   },
   scrollView: {
     flex: 1,
@@ -49,24 +35,5 @@ export const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-  },
-  emptyState: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    paddingHorizontal: 16,
-    minHeight: 300,
-  },
-  emptyStateText: {
-    fontSize: 18,
-    fontWeight: "600",
-    color: "#1a1a1a",
-    marginBottom: 8,
-    textAlign: "center",
-  },
-  emptyStateSubtext: {
-    fontSize: 14,
-    color: themas.Colors.gray,
-    textAlign: "center",
   },
 });

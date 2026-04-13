@@ -1,0 +1,185 @@
+import { StyleSheet, Dimensions } from "react-native";
+import { themas } from "../../global/themes";
+
+const screenWidth = Dimensions.get("window").width;
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: themas.Colors.bgScreen,
+  },
+  title: {
+    fontSize: 18,
+    fontWeight: '600',
+    color: '#1A1A1A',
+    textAlign: 'center',
+    marginTop: 50,
+  },
+  headerBar: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    paddingTop: 20,
+    paddingHorizontal: 16,
+  },
+  backButton: {
+    width: 40,
+    height: 40,
+    borderRadius: 14,
+    backgroundColor: themas.Colors.secondary,
+    justifyContent: "center",
+    alignItems: "center",
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.08,
+    shadowRadius: 4,
+    elevation: 2,
+  },
+  menuButton: {
+    width: 40,
+    height: 40,
+    borderRadius: 14,
+    backgroundColor: themas.Colors.secondary,
+    justifyContent: "center",
+    alignItems: "center",
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.08,
+    shadowRadius: 4,
+    elevation: 2,
+  },
+  content: {
+    paddingHorizontal: 16,
+    paddingBottom: 24,
+  },
+  coverImage: {
+    width: "100%",
+    height: screenWidth * 0.55,
+    borderRadius: 20,
+    marginTop: 16,
+    backgroundColor: themas.Colors.lightGray,
+  },
+  infoCard: {
+    marginTop: 20,
+    padding: 18,
+    borderRadius: 20,
+    backgroundColor: themas.Colors.secondary,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 8 },
+    shadowOpacity: 0.05,
+    shadowRadius: 14,
+    elevation: 3,
+  },
+  courtName: {
+    fontSize: 24,
+    fontWeight: "700",
+    color: "#1A1A1A",
+    marginBottom: 6,
+  },
+  locationText: {
+    fontSize: 15,
+    color: themas.Colors.gray,
+    marginBottom: 14,
+  },
+  priceText: {
+    fontSize: 18,
+    color: themas.Colors.primary,
+    fontWeight: "700",
+  },
+  tabNavigation: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginTop: 20,
+  },
+  tabButton: {
+    flex: 1,
+    marginRight: 10,
+    paddingVertical: 12,
+    borderRadius: 14,
+    backgroundColor: themas.Colors.secondary,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  tabButtonActive: {
+    backgroundColor: themas.Colors.primary,
+  },
+  tabText: {
+    color: themas.Colors.gray,
+    fontWeight: "600",
+  },
+  tabTextActive: {
+    color: themas.Colors.secondary,
+  },
+  section: {
+    marginTop: 20,
+    padding: 18,
+    borderRadius: 20,
+    backgroundColor: themas.Colors.secondary,
+  },
+  sectionTitle: {
+    fontSize: 16,
+    fontWeight: "700",
+    marginBottom: 14,
+    color: "#1A1A1A",
+  },
+  sectionDescription: {
+    fontSize: 14,
+    color: themas.Colors.gray,
+    marginBottom: 14,
+    lineHeight: 20,
+  },
+  timesContainer: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    marginHorizontal: -5,
+    marginBottom: -5,
+  },
+  timePill: {
+    paddingHorizontal: 16,
+    paddingVertical: 10,
+    borderRadius: 12,
+    backgroundColor: themas.Colors.lightGray,
+    marginHorizontal: 5,
+    marginVertical: 5,
+  },
+  timePillActive: {
+    backgroundColor: themas.Colors.primary,
+  },
+  timeText: {
+    color: "#1A1A1A",
+    fontWeight: "600",
+  },
+  timeTextActive: {
+    color: themas.Colors.secondary,
+  },
+  selectedTimeLabel: {
+    marginTop: 14,
+    color: themas.Colors.gray,
+    fontSize: 14,
+    fontWeight: "600",
+  },
+  mapButton: {
+    marginTop: 10,
+    paddingVertical: 14,
+    borderRadius: 14,
+    backgroundColor: themas.Colors.lightGray,
+    alignItems: "center",
+  },
+  mapButtonText: {
+    color: "#1A1A1A",
+    fontWeight: "700",
+  },
+  reserveButton: {
+    marginTop: 26,
+    height: 56,
+    borderRadius: 16,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: themas.Colors.primary,
+  },
+  reserveButtonText: {
+    color: themas.Colors.secondary,
+    fontSize: 16,
+    fontWeight: "700",
+  },
+});

@@ -38,7 +38,7 @@ export default function CustomTabBar({ state, descriptors, navigation }: BottomT
             style={styles.tabButton}
           >
             <Ionicons
-              name={isFocused ? iconName : `${iconName}-outline`}
+              name={iconName as any}
               size={24}
               color={isFocused ? '#1f65ff' : '#666'}
             />

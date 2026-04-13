@@ -1,12 +1,15 @@
 import 'react-native-gesture-handler';
-import { StyleSheet, Text, View } from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
+import { StyleSheet } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
 import Routes from './src/routes/index.routes';
+import { ReservationsProvider } from './src/context/ReservationsContext';
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Routes />
+      <ReservationsProvider>
+        <Routes />
+      </ReservationsProvider>
     </NavigationContainer>
   );
 }

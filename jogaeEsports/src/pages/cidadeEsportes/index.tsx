@@ -46,7 +46,10 @@ export default function cidadeEsportes() {
 
         navigation.reset({
           index: 0,
-          routes: [{ name: 'Main' }],
+          routes: [{ 
+            name: 'Main',
+            params: { city, selectedSports }
+          }],
         });
     }
 

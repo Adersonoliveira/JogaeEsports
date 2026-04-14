@@ -10,6 +10,7 @@ import NewJogos from "../pages/jogos/newJogo";
 import Explorar from "../pages/explorar";
 import Perfil from "../pages/perfil";
 import DetalhesQuadra from "../pages/quadras/DetalhesQuadra";
+import Pagamento from "../pages/pagamentos"; 
 import CustomTabBar from "../componets/CustomTabBar";
 
 export default function Routes() {
@@ -26,6 +27,7 @@ export default function Routes() {
             <Stack.Screen name="Login" component={Login} />
             <Stack.Screen name="CidadeEsportes" component={CidadeEsportes} />
             <Stack.Screen name="DetalhesQuadra" component={DetalhesQuadra} />
+            <Stack.Screen name="Pagamento" component={Pagamento} />
             <Stack.Screen name="Main" component={MainTabs} />
         </Stack.Navigator>
     );
